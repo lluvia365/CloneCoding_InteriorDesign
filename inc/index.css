@@ -1,0 +1,129 @@
+@charset="UTF-8";
+
+/* inc/index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+*{ box-sizing:border-box; margin:0; outline:0 }
+
+body { font-family: 'Nanum Gothic', sans-serif }
+
+
+#leftBox {  /* 좌측 고정박스 */
+    position: fixed;
+    top:0; left:0;
+    width:200px;
+    height: 100vh;
+    background:#fbd3e9; color:#FFF;
+    padding: 20px 10px 10px 0;
+    transition: .3s;
+}
+
+#logo img { width:100% }
+
+#navi {
+    
+}
+
+
+#rightBox {  /* 우측 콘텐츠박스 */
+    margin-left:200px;
+    padding:20px;
+}
+
+h1 {
+    font-size:3.5rem;
+    margin-bottom: 30px;
+}
+
+.secTitle {
+    font-size:2.5rem; color:#bb377d;
+    margin-bottom: 50px;
+    position:relative; /* 아래쪽 줄 위치용 */
+}
+
+.secTitle::after {  /* 원래는 없는 가상요소 */
+    position: absolute;
+    bottom:-60%; left:0;
+    content: ""; /* 내용이 없더라도 content가 들어가야함 */
+    width:50px; height: 7px;
+    background: #bb377d;
+    border-radius:3.5px; 
+}
+
+#galleryBox {
+    display: flex; flex-wrap: wrap;
+}
+
+.gallery {
+    display: block;  /* 이미지가 박스에 빈공간없이 꽉 차게 */
+    width:calc((100% - 20px) / 2);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:.3s;
+    opacity:.7;
+}
+
+.gallery:nth-child(2n) { margin-right: 0 }
+
+.gallery:hover { opacity:1 }
+
+#modal {
+    position:fixed; top: 0; left:0;
+    width:100%; height: 100%;
+    background:rgba(0,0,0,5); color:#FFF;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalContents { position: relative }
+
+#modalImage { 
+    max-width: 100%
+}
+
+#madalCaption { color:#FFF; text-align: center }
+
+#modalClose {
+    position: absolute; top:10px; right: 10px;
+    color: red; font-size: 2rem;
+    cursor: pointer;
+}
+
+#view {
+    position: fixed; top:5px; left:5px;
+    width:40px; height:40px;
+    text-align: center; font-size: 2rem;
+    background:#ddd; border:none;
+    color:red; display: none;
+    cursor: pointer; z-index:9;
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    
+    /* 좌측박스 숨기기 */
+    #leftBox { left:-200px }
+    
+    /* 우측박스 화면 채우기 */
+    #rightBox { margin-left:0; padding:10px }
+    
+    /* 펼침버튼 보이기 */
+    #view { display: block }
+}
+
+
+@media screen and (max-width:400px) {
+    
+    /* 갤러리 한 개씩 표현 */
+    .gallery { width:100%; margin-right:0  }
+    
+}
+
+
+

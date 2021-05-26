@@ -7,40 +7,97 @@
 
 <title> Interior Design </title>
 
-<style>
+<!-- 파비콘(Favicon) 적용하기 -->
+<link href="imgaes/favicon.png" rel="shortcut icon" />
+    
+<link href="inc/index.css" rel="stylesheet" />
+    
+    <!-- jQuery 라이브러리 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 
-   @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
-
-   *{ box-sizing:border-box; margin:0; outline:0 }
-
-   body {
-       font-family: 'Nanum Gothic', sans-serif;
-   }
-
-</style>
+<script src="inc/index.js"></script>
+    
 
 </head>
 
 <body>
     
     <div id="container">
-    
-    
-    
-    <!-- 좌측 고정 박스(로고, 내비) -->
-    <div id="leftBox">
-        <div id="logo"><a href="index.html"><img src="imgaes/logo.svg" rel="로고" />Company Name</a></div>
-        <div id="menu">
-            
-        </div>
-    
-    </div>  <!-- 좌측 고정 박스(로고, 내비) #leftBox -->
-    
-    <!-- 우측 콘텐츠 박스 -->
-    <div id="rightBox">
-    
-    </div>  <!-- 우측 콘텐츠 박스 #rightBox -->
 
-    </div>
+        <!-- 좌측 고정 박스(로고, 내비) -->
+        <div id="leftBox">
+            <div id="logo"><a href="index.html"><img src="imgaes/logo.svg" rel="로고" /></a></div>
+            <div id="navi">
+                <ul class="menu"><a href="#">Home</a></ul>
+                <ul class="menu"><a href="#">Showcase</a></ul>
+                <ul class="menu"><a href="#">Services</a></ul>
+                <ul class="menu"><a href="#">Designers</a></ul>
+                <ul class="menu"><a href="#">Packages</a></ul>
+                <ul class="menu"><a href="#">Contact</a></ul>
+            </div>
+
+        </div>  <!-- 좌측 고정 박스(로고, 내비) #leftBox -->
+
+        <!-- 우측 콘텐츠 박스 -->
+        <div id="rightBox">
+            
+            <h1>Interior Design</h1>
+            
+            <section id="secA">
+                <h2 class="secTitle">Showcase.</h2>
+                
+                <div id="galleryBox">
+                    <img src="imgaes/kitchenconcrete.jpg"  alt="Concrete meets bricks" rel="이미지" class="gallery" />
+                    <img src="imgaes/atrium.jpg" rel="이미지" alt="Windows for the atrium" class="gallery" />
+                    <img src="imgaes/livingroom.jpg" rel="이미지" class="gallery" />
+                    <img src="imgaes/bedroom.jpg" rel="이미지" class="gallery" />
+                    <img src="imgaes/diningroom.jpg" rel="이미지" class="gallery" />
+                    <img src="imgaes/livingroom2.jpg" rel="이미지" class="gallery" />
+                </div>
+
+            </section>  <!-- #secA -->
+            
+            <div id="modal">
+                <div id="modalContents">
+                    <img id="modalImage" src="imgaes/kitchenconcrete.jpg"/ >
+                   <img id="modalImage" src="imgaes/atrium.jpg"/ >
+                   <img id="modalImage" src="imgaes/livingroom.jpg"/ >
+                   <img id="modalImage" src="imgaes/bedroom.jpg"/ >
+                   <img id="modalImage" src="imgaes/diningroom.jpg"/ >
+                   <img id="modalImage" src="imgaes/livingroom2.jpg"/ >
+                </div>  <!-- #modalContents -->
+                <div id="modalCaption">
+                    <p>Concrete meets bricks</p>
+                    <p>Windows for the atrium</p>
+                    <p>Light, white and tight scandinavian design</p>
+                    <p>Bedroom and office in one space</p>
+                    <p>White walls with designer chairs</p>
+                    <p>Scandinavian design</p>
+                </div>
+                
+                <button id="modalClose">&times;</button>
+            
+            </div>  <!-- #modal -->
+            
+                       
+            <section id="secB">
+                <h2 class="secTitle">Services.</h2>
+                
+                <div id="textBoxB">
+                    <p>We are a interior design service that focus on what's best for your home and what's best for you!
+
+                    Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>    
+                </div>
+
+            </section>  <!-- #secB -->
+            
+            
+            
+            
+        </div>  <!-- 우측 콘텐츠 박스 #rightBox -->
+        
+        <button id="view">&equiv;</button>
+
+    </div>  <!-- 전체 박스 #container -->
 </body>
 </html>
