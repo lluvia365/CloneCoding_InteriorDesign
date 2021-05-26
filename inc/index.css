@@ -38,7 +38,7 @@ body { font-family: 'Nanum Gothic', sans-serif }
     font-size:1.5rem;
     font-weight: bold;
 }
-
+  
 .menu::after {
     content:"";
     position: absolute; bottom: 10px; left:50%;
