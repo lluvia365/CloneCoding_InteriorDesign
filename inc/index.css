@@ -164,6 +164,7 @@ h2 { padding-top: 20px; font-size: 2rem }
 .outBox {
     width:calc((100% - 20px) / 3);
     margin-right: 10px;
+    background:#eee;
 }
 
 .outBox>img { 
@@ -172,8 +173,38 @@ h2 { padding-top: 20px; font-size: 2rem }
 
 .outBox:last-child{ margin-right: 0 }
 
+.outBox>p { margin:20px 0}
 
 
+/*----------------- secD ----------------- */
+#secD { 
+    width:100%;
+    display: flex; flex-wrap: wrap;
+    
+    border:1px solid orange;
+}
+
+#secD>p { margin:20px 0 }
+
+#leftMenu {
+    width:50%;
+    margin-right: 10px;
+    list-style: none;
+    text-align: center;
+    background:#eee;
+    padding-left: 0;
+}
+
+.list {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#leftTitle {
+    width:100%;
+    background:#ccc; 
+    padding:0;
+}
 
 
 
