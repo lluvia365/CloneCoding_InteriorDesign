@@ -34,7 +34,7 @@ $(function(){
 
 
 $(window).resize(function(){
-    if($(this).window() > 700)
+    if($(this).width() > 700)
         $('#leftBox').removeAttr('style');
 })
 
