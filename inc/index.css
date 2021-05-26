@@ -72,18 +72,20 @@ h1 {
 /*----------------- secA ----------------- */
 .secTitle {
     font-size:2.5rem; color:#bb377d;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     position:relative; /* 아래쪽 줄 위치용 */
 }
 
 .secTitle::after {  /* 원래는 없는 가상요소 */
     position: absolute;
-    bottom:-60%; left:0;
+    bottom:-50%; left:0;
     content: ""; /* 내용이 없더라도 content가 들어가야함 */
-    width:50px; height: 7px;
+    width:50px; height: 8px;
     background: #bb377d;
     border-radius:3.5px; 
 }
+
+h2 { padding-top: 20px; font-size: 2rem }
 
 #galleryBox {
     display: flex; flex-wrap: wrap;
@@ -144,6 +146,36 @@ h1 {
     line-height: 2rem;
     font-weight: bold;
 }
+
+
+/*----------------- secC ----------------- */
+#secC {
+    width:100%;
+    display: flex; flex-wrap: wrap;
+}
+
+#ctextBox { width:100% }
+
+.c2 { padding: 10px }
+
+.c3 { color:#bb377d; padding-bottom: 10px }
+
+
+.outBox {
+    width:calc((100% - 20px) / 3);
+    margin-right: 10px;
+}
+
+.outBox>img { 
+    width:100%;
+}
+
+.outBox:last-child{ margin-right: 0 }
+
+
+
+
+
 
 
 
