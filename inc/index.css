@@ -5,14 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-
 
 *{ box-sizing:border-box; margin:0; outline:0 }
 
-h1, h2 { font-family: 'Nanum Gothic', sans-serif }
-
-body { font-family: 'Jua', sans-serif }
+body { font-family: 'Nanum Gothic', sans-serif }
 
 
 
@@ -158,7 +154,11 @@ h2 { padding-top: 20px; font-size: 2rem }
 
 .c2 { padding: 10px }
 
-.c3 { color:#bb377d; padding-bottom: 10px }
+.c3 { 
+    color:#bb377d; 
+    padding-bottom: 10px;
+    font-weight: bold;
+}
 
 
 .outBox {
@@ -180,14 +180,12 @@ h2 { padding-top: 20px; font-size: 2rem }
 #secD { 
     width:100%;
     display: flex; flex-wrap: wrap;
-    
-    border:1px solid orange;
 }
 
 #secD>p { margin:20px 0 }
 
 #leftMenu {
-    width:50%;
+    width:45%;
     margin-right: 10px;
     list-style: none;
     text-align: center;
@@ -195,16 +193,76 @@ h2 { padding-top: 20px; font-size: 2rem }
     padding-left: 0;
 }
 
+#leftTitle {
+    width:100%;
+    background:#555; 
+    color:#FFF;
+    padding:0;
+}
+
+#button1 {
+    width:200px;
+    background:#FFF;
+    margin:auto;
+    border:1px solid #fbd3e9;
+    cursor: pointer;
+}
+
+#button1:hover { background:#333; color:#FFF }
+
 .list {
-    font-size: 1.5rem;
+    line-height: 3.5rem;
+    font-size: 1.2rem;
     border-bottom: 1px solid #ccc;
 }
 
-#leftTitle {
+
+#rigthMenu {
+    width:45%;
+    margin-right: 10px;
+    list-style: none;
+    text-align: center;
+    background:#eee;
+    padding-left: 0;
+}
+
+#rightTitle {
     width:100%;
-    background:#ccc; 
+    background:#bb377d;
+    color:#FFF;
     padding:0;
 }
+
+#button2 {
+    width:200px;
+    background:#bb377d;
+    margin:auto;
+    cursor: pointer;
+}
+
+#button2:hover { background:#333; color:#FFF }
+
+
+/*----------------- secE ----------------- */
+#secE>p { margin-bottom: 20px;}
+
+.form {
+    width:100%;
+    height: 50px;
+    margin:10px 0;
+}
+
+#button3 {
+    width:100%;
+    line-height: 50px;
+    background:#bb377d;
+    color:#FFF;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
 
 
 
